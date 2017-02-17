@@ -1,0 +1,7 @@
+body {
+  direction: rtl;
+}
+
+.voters {
+  float: right !important;
+}
