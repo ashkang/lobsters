@@ -5,3 +5,8 @@ body {
 .voters {
   float: right !important;
 }
+
+ol.comments {
+ margin-left: 0;
+ margin-right: 30px;
+}
