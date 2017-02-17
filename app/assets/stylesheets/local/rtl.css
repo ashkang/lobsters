@@ -3,5 +3,5 @@ body {
 }
 
 .voters {
-  float: right;
+  float: right !important;
 }
