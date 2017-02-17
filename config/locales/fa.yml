@@ -1,0 +1,55 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  time:
+    formats:
+      default: "%Y-%m-%d %H:%M:%S"
+  models:
+    moderation:
+      storyeditedby: "مطلب شما ادیت شده تویط "
+      usersuggestions: "پیشنهادات کاربران"
+      amoderator: "یک ناظر"
+      storyeditedfor: "مطلب [%{title}](%{url}) با تغییرات زیر ویرایش شده است:\n"
+      reasongiven: "به علت:\n"
+      commentmoderated: "نظر شما تحت مدیریت قرار گرفته است"
+      commentmoderatedwhy: "نظر شما روی مطلب [%{title}](%{url}) تحت مدیریت قرار گرفته است:\n"
+      automatedmessage: "*این یک پیغام اتوماتیک است.*"
+  layouts:
+    application:
+      homelink: "خانه"
+      recentlink: "مطالب اخیر"
+      commentslink: "نظرات"
+      yourthreadslink: "مطالب شما"
+      submitstorylink: "ایجاد مطلب جدید"
+      searchlink: "جستجو"
+      filterslink: "فیلترها"
+      newmessagelink:
+        one: "یک پیغام جدید"
+        other: "%{count} پیغام جدید"
+      messageslink: "Messages"
+      loginlink: "Login"
+      logoutlink: "Logout"
+      confirmlogoutlink: "Are you sure you want to logout?"
+      moderationloglink: "Moderation Log"
+      invitationqueuelink: "Invitation Queue"
+      chatlink: "Chat"
+      hatrequestlink: "Hat Requests"
+      hatslink: "Hats"
+      privacylink: "Privacy"
+      aboutlink: "About"
+  moderations:
+    index:
+      moderationlogtitle: "Moderation Log"
+      datecolumn: "Date/Time"
+      moderatorcolumn: "Moderator"
+      reasoncolumn: "Story/Comment/User, Action, Reason"
+      storyline: "Story"
+      commentline: "Comment by"
+      commenton: "on"
+      user: "User"
+      users: "Users"
+      deleted: "Deleted"
+      actionline: "Action"
+      reasonline: "Reason"
+      page: "Page"
