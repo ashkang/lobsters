@@ -5,13 +5,13 @@ fa:
   activerecord:
     errors:
       template:
-        header: خطا
-        body: یه مشکلی پیش اومد و کاری میخواستین انجام بدین انجام نشد، چون:
+        header: "خطا"
+        body: "یه مشکلی پیش اومد و کاری میخواستین انجام بدین انجام نشد، چون:"
       messages:
-        record_invalid: رکورد نامعتبر است %{errors}
+        record_invalid: "رکورد نامعتبر است %{errors}"
         restrict_dependent_destroy:
-          has_many: نمی توان رکورد را حذف کرد بخاطر اینکه %{record} وابسته وجود دارد
-          has_one: نمی توان رکورد را حذف کرد بخاطر اینکه یک %{record} وابسته وجود دارد
+          has_many: "نمی توان رکورد را حذف کرد بخاطر اینکه %{record} وابسته وجود دارد"
+          has_one: "نمی توان رکورد را حذف کرد بخاطر اینکه یک %{record} وابسته وجود دارد"
       models:
         story:
           attributes:
@@ -24,88 +24,88 @@ fa:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: حدود یک ساعت
-        other: حدود %{count} ساعت
+        one: "حدود یک ساعت"
+        other: "حدود %{count} ساعت"
       about_x_months:
-        one: حدود یک ماه
-        other: حدود %{count} ماه
+        one: "حدود یک ماه"
+        other: "حدود %{count} ماه"
       about_x_years:
-        one: حدود یک سال
-        other: حدود %{count} سال
+        one: "حدود %{count} ماه"
+        other: "حدود %{count} سال"
       almost_x_years:
-        one: حدود یک سال
-        other: حدود %{count} سال
-      half_a_minute: نیم دقیقه
+        one: "حدود یک سال"
+        other: "حدود %{count} سال"
+      half_a_minute: "نیم دقیقه"
       less_than_x_minutes:
-        one: کمتر از یک دقیقه
-        other: کمتر از %{count} دقیقه
+        one: "کمتر از یک دقیقه"
+        other: "کمتر از %{count} دقیقه"
       less_than_x_seconds:
-        one: یک ثانیه
-        other: کمتر  از %{count} ثانیه
+        one: "یک ثانیه"
+        other: "کمتر  از %{count} ثانیه"
       over_x_years:
-        one: بیش از یک سال
-        other: بیش از %{count} سال
+        one: "بیش از یک سال"
+        other: "بیش از %{count} سال"
       x_days:
-        one: یک روز
+        one: "یک روز"
         other: "%{count} روز"
       x_minutes:
-        one: یک دقیقه
+        one: "یک دقیقه"
         other: "%{count} دقیقه"
       x_months:
-        one: یک ماه
+        one: "یک ماه"
         other: "%{count} ماه"
       x_seconds:
         one: یک ثانیه
         other: "%{count} ثانیه"
       x_years:
-        one: 1 سال
+        one: "1 سال"
         other: "%{count} سال"
     prompts:
-      day: روز
-      hour: ساعت
-      minute: دقیقه
-      month: ماه
-      second: ثانیه
-      year: سال
+      day: "روز"
+      hour: "ساعت"
+      minute: "دقیقه"
+      month: "ماه"
+      second: "ثانیه"
+      year: "سال"
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: باید پذیرفته شود
-      blank: نباید خالی باشد
-      confirmation: با تایید نمی‌خواند
-      empty: نمی‌تواند خالی باشد
-      equal_to: باید برابر %{count} باشد
-      even: باید زوج باشد
-      exclusion: رزرو است
-      greater_than: باید بزرگتر از %{count} باشد
-      greater_than_or_equal_to: باید بزرگتر یا برابر %{count} باشد
-      inclusion: در لیست موجود نیست
-      invalid: نامعتبر است
-      less_than: باید کمتر از %{count} باشد
+      accepted: "باید پذیرفته شود"
+      blank: "نباید خالی باشد"
+      confirmation: "با تایید نمی‌خواند"
+      empty: "نمی‌تواند خالی باشد"
+      equal_to: "باید برابر %{count} باشد"
+      even: "باید زوج باشد"
+      exclusion: "رزرو است"
+      greater_than: "باید بزرگتر از %{count} باشد"
+      greater_than_or_equal_to: "باید بزرگتر یا برابر %{count} باشد"
+      inclusion: "در لیست موجود نیست"
+      invalid: "نامعتبر است"
+      less_than: "باید کمتر از %{count} باشد"
       less_than_or_equal_to: باید کمتر یا برابر %{count} باشد
       model_invalid: "رکورد نامعتبر است %{errors}"
-      not_a_number: عدد نیست
-      not_an_integer: عدد صحیح نیست
-      odd: باید فرد باشد
-      other_than: باید غیر از %{count} باشد
-      present: باید خالی باشد
-      required: باید وجود داشته باشد
-      taken: پیشتر گرفته شده
-      too_long: بلند است (حداکثر %{count} کاراکتر)
-      too_short: کوتاه است (حداقل %{count} کاراکتر)
-      wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
+      not_a_number: "عدد نیست"
+      not_an_integer: "عدد صحیح نیست"
+      odd: "باید فرد باشد"
+      other_than: "باید غیر از %{count} باشد"
+      present: "باید خالی باشد"
+      required: "باید وجود داشته باشد"
+      taken: "پیشتر گرفته شده"
+      too_long: "بلند است (حداکثر %{count} کاراکتر)"
+      too_short: "کوتاه است (حداقل %{count} کاراکتر)"
+      wrong_length: "نااندازه است (باید %{count} کاراکتر باشد)"
     template:
       body: "موارد زیر مشکل داشت:"
       header:
-        one: 1 خطا جلوی ذخیره این %{model} را گرفت
+        one: "1 خطا جلوی ذخیره این %{model} را گرفت"
         other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
   helpers:
     select:
-      prompt: لطفا انتخاب کنید
+      prompt: "لطفا انتخاب کنید"
     submit:
-      create: ایجاد %{model}
-      submit: ذخیره‌ی %{model}
-      update: بروز رسانی %{model}
+      create: "ایجاد %{model}"
+      submit: "ذخیره‌ی %{model}"
+      update: "بروز رسانی %{model}"
   number:
     currency:
       format:
