@@ -57,5 +57,8 @@ fa:
     new:
       submit: "مطلب جدید"
       cached: "نسخه آرشیوی"
-    _listdetail: 
+      markdown_formatting_available: "نمایش فرمت مارک داون"
+      preview: "پیش نمایش"
+      submit: "ارسال"
+    _listdetail:
       cached: "کش"
