@@ -68,6 +68,14 @@ fa:
   stories:
     form:
       thisstorywasalreadysubmited: "این مطلب قبلا فرستاده شده است"
+      fetchtitle: "دریافت تیتر"
+      url: "آدرس منبع:"
+      title: "تیتر:"
+      tags: "برچسبها:"
+      text: "متن:"
+      author: "نویسنده:"
+      submitterisauthor: "ارسال کننده، همان نویسنده مطلب ارسالی است"
+      iamtheauthor: "من نویسنده مطلب ارسالی هستم"
     edit:
       editstory: "ویرایش مطلب"
     new:
