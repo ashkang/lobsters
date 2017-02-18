@@ -90,7 +90,7 @@ fa:
       cached: "کش"
       comments: "%{count} نظر"
       authoredby: "نوشته شده توسط"
-      via: "از طریق"
+      via: "ارسال شده توسط"
       justnow: "همین حالا"
   helpers:
     time:
