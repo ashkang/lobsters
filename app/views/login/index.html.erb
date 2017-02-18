@@ -1,37 +1,30 @@
 <div class="box wide">
   <div class="legend">
-    Login
+    <% t('.login') %>
   </div>
 
   <%= form_tag login_path do %>
   <p>
-    <%= label_tag :email, "E-mail or Username:" %>
+    <%= label_tag :email, t('.credentials') %>
     <%= text_field_tag :email, "", :size => 30, :autofocus => "autofocus" %>
     <br />
 
-    <%= label_tag :password, "Password:" %>
+    <%= label_tag :password, t('.password') %>
     <%= password_field_tag :password, "", :size => 30 %>
     <br />
     </p>
 
     <p>
-    <%= submit_tag "Login" %>
+    <%= submit_tag t('.login') %>
     </p>
 
     <p>
-    Forgot your password or deleted your account?
-      <%= link_to "Reset your password", forgot_password_path %>.
+    <%= t('.forgotpassword') %>
+      <%= link_to t('.resetyourpassword'), forgot_password_path %>.
     </p>
 
     <p>
-    Not a user yet?  Signup is by invitation only to combat spam and increase
-    accountability.  If you know <a href="/u/">a current user</a> of the site,
-    ask them for an invitation or
-    <% if Rails.application.allow_invitation_requests? %>
-      <a href="/invitations/request">request one publicly</a>.
-    <% else %>
-      request one in <a href="/chat">chat</a>.
-    <% end %>
+    <%= t('.inviteonly') %>
     </p>
 
     <% if @referer.present? %>
@@ -39,3 +32,12 @@
     <% end %>
   <% end %>
 </div>
+
+Not a user yet?  Signup is by invitation only to combat spam and increase
+accountability.  If you know <a href="/u/">a current user</a> of the site,
+ask them for an invitation or
+<% if Rails.application.allow_invitation_requests? %>
+  <a href="/invitations/request">request one publicly</a>.
+<% else %>
+  request one in <a href="/chat">chat</a>.
+<% end %>
