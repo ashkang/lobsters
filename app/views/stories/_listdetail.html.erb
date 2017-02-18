@@ -94,10 +94,12 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
 
     <div class="byline">
       <% if (@user && @user.show_avatars?) || !@user %>
+        <div class="via">
         <a href="/u/<%= story.user.username %>"><img
           src="<%= story.user.avatar_url(16) %>"
           srcset="<%= story.user.avatar_url(16) %> 1x,
           <%= story.user.avatar_url(32) %> 2x" class="avatar"></a>
+        </div>`
       <% end %>
       <% if story.previewing %>
         <% if story.user_is_author? %>
