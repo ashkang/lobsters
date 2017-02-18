@@ -54,4 +54,6 @@ fa:
       reasonline: "دلیل"
       page: "صفحه"
   stories:
-    cached: "نسخه آرشیوی"
+    new:
+      cached: "نسخه آرشیوی"
+      _listdetail: "کش"
