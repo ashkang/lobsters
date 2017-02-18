@@ -55,6 +55,7 @@ fa:
       page: "صفحه"
   stories:
     new:
+      submit: "مطلب جدید"
       cached: "نسخه آرشیوی"
     _listdetail: 
       cached: "کش"
