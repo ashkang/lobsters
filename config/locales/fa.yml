@@ -62,7 +62,7 @@ fa:
     listdetail:
       nocomments: "فاقد نظر"
       cached: "کش"
-      comments: "%{comments} نظر"
+      comments: "%{count} نظر"
   comments:
     comment:
       reply: "جواب"
