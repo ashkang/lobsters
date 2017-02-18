@@ -56,10 +56,10 @@ fa:
   stories:
     new:
       submit: "مطلب جدید"
-    show:
-      cached: "نسخه آرشیوی"
       markdown_formatting_available: "نمایش فرمت مارک داون"
       preview: "پیش نمایش"
       submit: "ارسال"
+    show:
+      cached: "نسخه آرشیوی"
     _listdetail:
       cached: "کش"
