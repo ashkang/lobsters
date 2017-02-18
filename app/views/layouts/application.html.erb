@@ -119,20 +119,20 @@
       <%= yield %>
 
       <div id="footer">
-        <a href="/moderations"><%= t('.moderationloglink') %></a>
+<!--         <a href="/moderations"><%= t('.moderationloglink') %></a> -->
         <% if @user && !@user.is_new? &&
         (iqc = InvitationRequest.verified_count) > 0 %>
           <a href="/invitations"><%= t('.invitationqueuelink') %>(<%= iqc %>)</a>
         <% end %>
         <% if @user && @user.is_moderator? &&
         (hrc = HatRequest.count) > 0 %>
-          <a href="/hats/requests"><%= t('.hatrequestlink') %> (<%= hrc %>)</a>
+<!--           <a href="/hats/requests"><%= t('.hatrequestlink') %> (<%= hrc %>)</a> -->
         <% else %>
-          <a href="/hats"><%= t('.hatslink') %></a>
+<!--           <a href="/hats"><%= t('.hatslink') %></a> -->
         <% end %>
-        <a href="/chat"><%= t('.chatlink') %></a>
-        <a href="/privacy"><%= t('.privacylink') %></a>
-        <a href="/about"><%= t('.aboutlink') %></a>
+<!--         <a href="/chat"><%= t('.chatlink') %></a> -->
+<!--         <a href="/privacy"><%= t('.privacylink') %></a> -->
+<!--         <a href="/about"><%= t('.aboutlink') %></a> -->
       </div>
       <div class="clear"></div>
     </div>
