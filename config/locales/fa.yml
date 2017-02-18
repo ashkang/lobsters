@@ -76,6 +76,7 @@ fa:
       author: "نویسنده:"
       submitterisauthor: "ارسال کننده، همان نویسنده مطلب ارسالی است"
       iamtheauthor: "من نویسنده مطلب ارسالی هستم"
+      optionaltext: "فرستادن متن همراه لینک اجباری نیست، اما به فهم بیشتر مطلب کمک میکند"
     edit:
       editstory: "ویرایش مطلب"
     new:
@@ -92,6 +93,7 @@ fa:
       authoredby: "نوشته شده توسط"
       via: "ارسال شده توسط"
       justnow: "همین حالا"
+      hide: "مخفی کن"
   helpers:
     time:
       now: "همین الان"
@@ -101,3 +103,14 @@ fa:
       days: "%{days} روز پیش"
       months: "%{months} ماه پیش"
       years: "%{years} سال پیش"
+  search:
+    index:
+      include: "شامل"
+      orderby: "مرتب کن بر اساس"
+      points: "امتیاز"
+      newest: "جدیدترین"
+      relevance: "مرتبط"
+      comments: "نظرات"
+      stories: "مطالب"
+      all: "همه"
+      search: "جستجو"

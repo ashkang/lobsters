@@ -158,7 +158,7 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
             | <%= link_to "unhide", story_unhide_path(story.short_id),
               :class => "hider" %>
           <% else %>
-            | <%= link_to "hide", story_hide_path(story.short_id),
+            | <%= link_to t('.hide'), story_hide_path(story.short_id),
               :class => "hider" %>
           <% end %>
           <% if defined?(single_story) && single_story && story.hider_count > 0 %>
