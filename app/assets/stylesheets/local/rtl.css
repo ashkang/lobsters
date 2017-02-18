@@ -36,11 +36,15 @@ div.markdown_help_label {
   border: 1px solid rgba(14, 14, 14, 0.04);
 }
 
-form > p > label {
+.box.wide label {
   clear: both;
   float: right !important;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+.gravatar {
+  float: left;
 }
