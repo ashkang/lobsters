@@ -15,6 +15,10 @@ div.markdown_help_label {
   float: left !important;
 }
 
+.markdown_help {
+  direction: ltr;
+}
+
 .byline>div.via {
   display: inline-block;
 }
