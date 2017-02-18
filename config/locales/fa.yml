@@ -212,6 +212,7 @@ fa:
       disableinvitations: "غیرفعال کردن امکان فرستادن دعوتنامه"
   messages:
     index:
+      privatemessages: "پیغام‌های خصوصی"
       viewreceived: "پیام‌های دریافت شده"
       viewsent: "پیام‌های ارسال شده"
       from: "از"
