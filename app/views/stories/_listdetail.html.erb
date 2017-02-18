@@ -177,7 +177,7 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
             <% if story.comments_count == 0 %>
               <%= t('.nocomments') %>
             <% else %>
-              <%= t('.comments', :count => to_farsi_number(story.comments_count)d) %>
+              <%= t('.comments', :count => to_farsi_number(story.comments_count)) %>
             <% end %>
             </a>
           </span>
