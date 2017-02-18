@@ -84,6 +84,22 @@ module ApplicationHelper
       I18n.t('helpers.time.years', :years => years)
     end
 
-    raw(content_tag(:span, ago, :title => time.strftime("%F %T %z")))
+    raw(content_tag(:span, to_farsi_number(ago), :title => time.strftime("%F %T %z")))
   end
+
+  def to_farsi_number(string)
+    string = string.gsub! '0', '۰'
+    string = string.gsub! '1', '۱'
+    string = string.gsub! '2', '۲'
+    string = string.gsub! '3', '۳'
+    string = string.gsub! '4', '۴'
+    string = string.gsub! '5', '۵'
+    string = string.gsub! '6', '۶'
+    string = string.gsub! '7', '۷'
+    string = string.gsub! '8', '۸'
+    string = string.gsub! '9', '۹'
+
+    string
+  end
+
 end
