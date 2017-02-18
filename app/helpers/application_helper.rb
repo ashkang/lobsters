@@ -88,16 +88,16 @@ module ApplicationHelper
   end
 
   def to_farsi_number(string)
-    string = string.gsub! '0', '۰'
-    string = string.gsub! '1', '۱'
-    string = string.gsub! '2', '۲'
-    string = string.gsub! '3', '۳'
-    string = string.gsub! '4', '۴'
-    string = string.gsub! '5', '۵'
-    string = string.gsub! '6', '۶'
-    string = string.gsub! '7', '۷'
-    string = string.gsub! '8', '۸'
-    string = string.gsub! '9', '۹'
+    string.gsub! '0', '۰'
+    string.gsub! '1', '۱'
+    string.gsub! '2', '۲'
+    string.gsub! '3', '۳'
+    string.gsub! '4', '۴'
+    string.gsub! '5', '۵'
+    string.gsub! '6', '۶'
+    string.gsub! '7', '۷'
+    string.gsub! '8', '۸'
+    string.gsub! '9', '۹'
 
     string
   end
