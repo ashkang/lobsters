@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "IranSansLight";
+  src: url('./IRANSans-Light.woff') format('woff');
+}
+
+body {
+  font-family: "IranSansLight", Tahoma, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}

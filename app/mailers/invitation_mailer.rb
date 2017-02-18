@@ -7,7 +7,7 @@ class InvitationMailer < ActionMailer::Base
 
     mail(
       :to => invitation.email,
-      subject: "[#{Rails.application.name}] You have been invited to " <<
+      subject: "شما به #{Rails.application.name} دعوت شدید" <<
         Rails.application.name
     )
   end
