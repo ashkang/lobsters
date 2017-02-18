@@ -45,7 +45,7 @@ div.markdown_help_label {
   display: inline-block;
 }
 
-.gravatar {
+#gravatar {
   position: absolute;
   right: 75%;
 }
