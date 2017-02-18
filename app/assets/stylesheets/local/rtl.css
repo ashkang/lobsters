@@ -43,3 +43,7 @@ form > p {
 form > p > label {
   float: right !important;
 }
+
+.inline-block {
+  display: inline-block;
+}
