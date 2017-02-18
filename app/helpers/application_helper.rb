@@ -64,24 +64,24 @@ module ApplicationHelper
     ago = ""
     secs = (Time.now - time).to_i
     if secs <= 5
-      ago = "just now"
+      ago =  I18n.t('helpers.time.now')
     elsif secs < 60
-      ago = "less than a minute ago"
+      ago = I18n.t('helpers.time.minute')
     elsif secs < (60 * 60)
       mins = (secs / 60.0).floor
-      ago = "#{mins} minute#{mins == 1 ? "" : "s"} ago"
+      ago = I18n.t('helpers.time.mins', :mins => mins)
     elsif secs < (60 * 60 * 48)
       hours = (secs / 60.0 / 60.0).floor
-      ago = "#{hours} hour#{hours == 1 ? "" : "s"} ago"
+      ago = I18n.t('helpers.time.hours', :hours => hours)
     elsif secs < (60 * 60 * 24 * 30)
       days = (secs / 60.0 / 60.0 / 24.0).floor
-      ago = "#{days} day#{days == 1 ? "" : "s"} ago"
+      I18n.t('helpers.time.days', :days => days)
     elsif secs < (60 * 60 * 24 * 365)
       months = (secs / 60.0 / 60.0 / 24.0 / 30.0).floor
-      ago = "#{months} month#{months == 1 ? "" : "s"} ago"
+      I18n.t('helpers.time.months', :months => months)
     else
       years = (secs / 60.0 / 60.0 / 24.0 / 365.0).floor
-      ago = "#{years} year#{years == 1 ? "" : "s"} ago"
+      I18n.t('helpers.time.years', :years => years)
     end
 
     raw(content_tag(:span, ago, :title => time.strftime("%F %T %z")))
