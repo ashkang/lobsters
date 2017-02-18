@@ -53,3 +53,5 @@ fa:
       actionline: "عملیات"
       reasonline: "دلیل"
       page: "صفحه"
+  stories:
+    cached: "نسخه آرشیوی"
