@@ -110,13 +110,28 @@ var _Lobsters = Class.extend({
       d.css("left", $(voterEl).position().left);
   },
 
+  toLatin: function(str) {
+    str = str.replace(/0/g, '۰')
+    str = str.replace(/1/g, '۱')
+    str = str.replace(/2/g, '۲')
+    str = str.replace(/3/g, '۳')
+    str = str.replace(/4/g, '۴')
+    str = str.replace(/5/g, '۵')
+    str = str.replace(/6/g, '۶')
+    str = str.replace(/7/g, '۷')
+    str = str.replace(/8/g, '۸')
+    str = str.replace(/9/g, '۹')
+
+    return parseInt(str)
+  },
+
   vote: function(thingType, voterEl, point, reason) {
     if (!Lobsters.curUser)
       return Lobsters.bounceToLogin();
 
     var li = $(voterEl).closest(".story, .comment");
     var scoreDiv = li.find("div.score").get(0);
-    var score = parseInt(scoreDiv.innerHTML);
+    var score = Lobsters.toLatin(parseInt(scoreDiv.innerHTML));
     var action = "";
 
     if (li.hasClass("upvoted") && point > 0) {
