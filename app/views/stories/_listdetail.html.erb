@@ -39,8 +39,8 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
         <% end %>
       </span>
       <% if story.domain.present? %>
-        <a class="domain" href="<%= story.domain_search_url %>"><%=
-          break_long_words(story.domain) %></a>
+<!--        <a class="domain" href="<%= story.domain_search_url %>"><%=
+          break_long_words(story.domain) %></a>-->
       <% end %>
 
       <% if defined?(single_story) && single_story %>
