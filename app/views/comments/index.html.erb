@@ -11,7 +11,7 @@
   <% if @page && @page > 1 %>
     <a href="/comments<%= @page == 2 ? "" : "/page/#{@page - 1}" %>">&lt;&lt; 
       صفحه
-      <%= (to_farsi_number(@page - 1).to_s) %></a>
+      <%= to_farsi_number((@page - 1).to_s) %></a>
   <% end %>
 
   <% if @comments.any? %>
@@ -20,6 +20,6 @@
     <% end %>
 
     <a href="/comments/page/<%= @page + 1 %>">صفحه
-      <%= (to_farsi_number(@page + 1).to_s) %> &gt;&gt;</a>
+      <%= to_farsi_number((@page + 1).to_s) %> &gt;&gt;</a>
   <% end %>
 </div>
