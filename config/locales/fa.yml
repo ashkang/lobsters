@@ -61,6 +61,7 @@ fa:
       submit: "ارسال"
     listdetail:
       cached: "کش"
+      comments: "%{comments} نظر"
   comments:
     comment:
       reply: "جواب"
