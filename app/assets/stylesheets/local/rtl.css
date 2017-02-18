@@ -22,3 +22,7 @@ div.markdown_help_label {
 .byline>div.via {
   display: inline-block;
 }
+
+.boxline>label {
+  float: right;
+}
