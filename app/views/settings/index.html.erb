@@ -33,9 +33,9 @@
     <div class="boxline">
       <%= f.label :email, t('.emailaddress'), :class => "required" %>
       <%= f.text_field :email, :size => 40 %>
-      <span class="hint">
+      <!-- <span class="hint">
         <a href="http://www.gravatar.com/" target="_blank">Gravatar</a>'ized
-      </span>
+      </span> -->
     </div>
 
     <div class="boxline">
@@ -68,7 +68,7 @@
 
     <div class="boxline">
       <%= f.label :pushover_user_key,
-        raw("<a href=\"https://pushover.net/\">Pushover</a>:"),
+        t('.pushover'),
         :class => "required" %>
       <%= link_to((f.object.pushover_user_key.present??
         t('.managepushoversubscription') : t('.subscribewithpushover')),
