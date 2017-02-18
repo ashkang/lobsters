@@ -96,6 +96,13 @@ fa:
       via: "ارسال شده توسط"
       justnow: "همین حالا"
       hide: "مخفی کن"
+      unhide: "آشکار کن"
+      deleteconfirm: "مطمئنی که میخوای این مطلب رو پاک کنی؟"
+      undeleteconfirm: "مطمئنی که میخوای این مطلب رو بازیابی کنی؟"
+      delete: "پاک کردن"
+      undelete: "بازیابی"
+      suggest: "توصیه"
+      edit: "ویرایش"
   helpers:
     time:
       now: "همین الان"
