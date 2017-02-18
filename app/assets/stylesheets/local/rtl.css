@@ -36,6 +36,10 @@ div.markdown_help_label {
   border: 1px solid rgba(14, 14, 14, 0.04);
 }
 
-form label {
+form > p {
+  clear: both;
+}
+
+form > p > label {
   float: right !important;
 }
