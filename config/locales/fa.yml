@@ -56,4 +56,5 @@ fa:
   stories:
     new:
       cached: "نسخه آرشیوی"
-      _listdetail: "کش"
+    _listdetail: 
+      cached: "کش"
