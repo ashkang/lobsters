@@ -89,11 +89,11 @@
 
   <% if !@showing_user.is_admin? %>
     <label class="required"><%= t('.karma') %></label>
-    <!-- <span class="d">
-      <%= @showing_user.karma %>, averaging <%=
+    <span class="d">
+      <%= @showing_user.karma %> <!--, averaging <%=
         number_with_precision(@showing_user.average_karma, :precision => 2) %>
-        per story/comment
-    </span> -->
+        per story/comment -->
+    </span>
     <br>
   <% end %>
 
