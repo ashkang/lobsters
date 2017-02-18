@@ -13,7 +13,7 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
     <% else %>
       <%= link_to "", login_path, :class => "upvoter" %>
     <% end %>
-    <div class="score"><%= to_farsi_number(story.score) %></div>
+    <div class="score"><%= to_farsi_number(story.score.to_s) %></div>
   </div>
   <div class="details">
     <span class="link">
@@ -177,7 +177,7 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
             <% if story.comments_count == 0 %>
               <%= t('.nocomments') %>
             <% else %>
-              <%= t('.comments', :count => to_farsi_number(story.comments_count)) %>
+              <%= t('.comments', :count => to_farsi_number(story.comments_count.to_s)) %>
             <% end %>
             </a>
           </span>
