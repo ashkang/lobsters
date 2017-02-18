@@ -26,3 +26,8 @@ div.markdown_help_label {
 .boxline>label {
   float: right;
 }
+
+.upvoter {
+  margin-right: 14px;
+  margin-left: 0;
+}

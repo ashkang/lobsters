@@ -92,7 +92,10 @@
 
           <a href="/settings" <%= @cur_url == "/settings" ?
             raw("class=\"cur_url\"") : "" %>><%= @user.username %>
-            (<%= @user.karma %>)</a>
+            <div style="display: inline-block">
+              (<%= @user.karma %>)
+            </div>
+          </a>
 
           <%= link_to t('.logoutlink'), { :controller => "login", :action => "logout" },
             :data => { :confirm => t('.confirmlogoutlink') },
