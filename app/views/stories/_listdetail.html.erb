@@ -70,9 +70,9 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
                 <%= ms.user.avatar_url(32) %> 2x" class="avatar"></a>
             <% end %>
             <% if story.user_is_author? %>
-              t('.authoredby')
+              <%= t('.authoredby') %>
             <% else %>
-              t('via')
+              <%= t('via') %>
             <% end %>
             <a href="/u/<%= ms.user.username %>" class="<%=
               ms.html_class_for_user %>"><%= ms.user.username %></a>
@@ -101,18 +101,18 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
       <% end %>
       <% if story.previewing %>
         <% if story.user_is_author? %>
-          t('.authoredby')
+          <%= t('.authoredby') %>
         <% else %>
-          t('.via')
+          <%= t('.via') %>
         <% end %>
         <a class="<%= story.html_class_for_user %>"><%=
           story.user.username %></a>
-        t('.justnow')
+        <%= t('.justnow') %>
       <% else %>
         <% if story.user_is_author? %>
-          t('.authoredby')
+          <%= t('.authoredby') %>
         <% else %>
-          t('.via')
+          <%= t('.via') %>
         <% end %>
         <a href="/u/<%= story.user.username %>" class="<%=
           story.html_class_for_user %>"><%= story.user.username %></a>
