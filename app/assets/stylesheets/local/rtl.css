@@ -53,3 +53,7 @@ div.markdown_help_label {
 .legend.right {
   float: left !important;
 }
+
+.comment_text {
+  font-size: 12pt;
+}
