@@ -92,8 +92,8 @@
 
           <a href="/settings" <%= @cur_url == "/settings" ?
             raw("class=\"cur_url\"") : "" %>><%= @user.username %>
-            <div style="display: inline-block">
-              (<%= @user.karma %>)
+            <div class="inline-block">
+              (<%= to_farsi_number(@user.karma.to_s) %>)
             </div>
           </a>
 
