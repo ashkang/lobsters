@@ -87,7 +87,7 @@ fa:
       edit: "اصلاح"
       delete: "پاک کردن"
   helpers:
-    applicationhelper:
+    time:
       now: "همین الان"
       minute: "یک دقیقه پیش"
       mins: "%{mins} دقیقه پیش"
