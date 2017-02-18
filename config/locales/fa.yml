@@ -210,3 +210,18 @@ fa:
       banuser: "محرومش کن"
       enableinvitations: "فعال کردن امکان فرستادن دعوتنامه"
       disableinvitations: "غیرفعال کردن امکان فرستادن دعوتنامه"
+  messages:
+    index:
+      viewreceived: "پیام‌های دریافت شده"
+      viewsent: "پیام‌های ارسال شده"
+      from: "از"
+      to: "به"
+      received: "دریافتی"
+      sent: "ارسالی"
+      deleteselected: "انتخاب شده‌ها رو پاک کن"
+      compose: فرستادن پیغام جدید
+      subject: "موضوع"
+      message: "متن پیام"
+      send: "بفرست"
+      nosentmessages: "شما هیچ پیغام خصوصی ارسال شده‌ای ندارید"
+      nomessages: "شما هیچ پیغام خصوصی ندارید"
