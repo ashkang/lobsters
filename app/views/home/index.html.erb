@@ -1,9 +1,9 @@
-<% if @cur_url == "/recent" %>
+<!-- <% if @cur_url == "/recent" %>
   <div class="box" id="leader">
     <em>The <a href="/newest">newest</a> stories with a random sampling of
     recently submitted stories that have not yet reached the front page.</em>
   </div>
-<% end %>
+<% end %> -->
 
 <ol class="stories list <%= @cur_url == "/hidden" ? "show_hidden" : "" %>">
   <%= render :partial => "stories/listdetail", :collection => @stories,
