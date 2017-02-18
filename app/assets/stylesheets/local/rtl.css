@@ -15,7 +15,6 @@ div.markdown_help_label {
   float: left !important;
 }
 
-div.byline>div.via {
-  float: right;
-  margin-left: 3px;
+.byline>div.via {
+  display: inline-block;
 }
