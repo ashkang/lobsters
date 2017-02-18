@@ -7,7 +7,7 @@ fa:
       default: "%Y-%m-%d %H:%M:%S"
   models:
     moderation:
-      storyeditedby: "مطلب شما ادیت شده تویط "
+      storyeditedby: "مطلب شما ادیت شده توسط "
       usersuggestions: "پیشنهادات کاربران"
       amoderator: "یک ناظر"
       storyeditedfor: "مطلب [%{title}](%{url}) با تغییرات زیر ویرایش شده است:\n"
@@ -34,8 +34,8 @@ fa:
       moderationloglink: "نظارت"
       invitationqueuelink: "صف دعوت"
       chatlink: "چت"
-      hatrequestlink: "Hat Requests"
-      hatslink: "Hats"
+      hatrequestlink: "درخواست کلاه"
+      hatslink: "کلاه"
       privacylink: "حریم خصوصی"
       aboutlink: "درباره"
   moderations:
@@ -53,13 +53,23 @@ fa:
       actionline: "عملیات"
       reasonline: "دلیل"
       page: "صفحه"
+  comments:
+    commentbox:
+      post: "ارسال"
+      update: "ویرایش"
+      preview: "پیش نمایش"
+      cancel: "لغو"
   stories:
+    form:
+      thisstorywasalreadysubmited: "این مطلب قبلا فرستاده شده است"
+    edit:
+      editstory: "ویرایش مطلب"
     new:
       submit: "مطلب جدید"
-      markdown_formatting_available: "نمایش فرمت مارک داون"
+      markdownformattingavailable: "نمایش فرمت مارک داون"
       preview: "پیش نمایش"
       submit: "ارسال"
     show:
       cached: "نسخه آرشیوی"
-    _listdetail:
+    listdetail:
       cached: "کش"

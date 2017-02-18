@@ -32,15 +32,15 @@ data-shortid="<%= comment.short_id if comment.persisted? %>">
         </div>
       <% end %>
 
-      <%= button_tag "#{comment.new_record?? "Post" : "Update"}",
+      <%= button_tag "#{comment.new_record?? t('.post') : t('.update')}",
         :class => "comment-post", :type => "button",
         :disabled => !@user %>
       &nbsp;
-      <%= button_tag "Preview", :class => "comment-preview",
+      <%= button_tag t('.preview'), :class => "comment-preview",
         :type => "button", :disabled => !@user %>
       <% if comment.persisted? || comment.parent_comment_id %>
         &nbsp;
-        <%= button_tag "Cancel", :class => "comment-cancel",
+        <%= button_tag t('.cancel'), :class => "comment-cancel",
           :type => "button" %>
       <% end %>
 
