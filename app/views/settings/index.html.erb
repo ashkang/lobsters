@@ -3,7 +3,7 @@
     <a href="/u/<%= @user.username %>"><%= t('.viewprofile') %></a>
   </div>
   <div class="legend">
-    Account Settings
+    <%= t('.accountsettings') %>
   </div>
 
   <%= form_for @edit_user, :url => settings_path, :method => :post,
@@ -63,7 +63,7 @@
     <br>
 
     <div class="legend">
-      <%= t('notificationsettings') %>
+      <%= t('.notificationsettings') %>
     </div>
 
     <div class="boxline">
@@ -146,7 +146,7 @@
 
     <div class="boxline">
       <%= f.label :show_submitted_story_threads,
-        raw("Show in <a href=\"/threads\">Your Threads</a>:"),
+        t('.showinyourthreads'),
         :class => "required" %>
       <%= f.check_box :show_submitted_story_threads %>
     </div>
