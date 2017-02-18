@@ -56,6 +56,5 @@ fa:
   stories:
     new:
       submit: "مطلب جدید"
+    show:
       cached: "نسخه آرشیوی"
-    _listdetail: 
-      cached: "کش"
