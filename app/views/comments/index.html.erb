@@ -10,7 +10,8 @@
 <div class="morelink">
   <% if @page && @page > 1 %>
     <a href="/comments<%= @page == 2 ? "" : "/page/#{@page - 1}" %>">&lt;&lt; 
-      Page <%= @page - 1 %></a>
+      صفحه
+      <%= (to_farsi_number(@page - 1).to_s) %></a>
   <% end %>
 
   <% if @comments.any? %>
@@ -18,7 +19,7 @@
       |
     <% end %>
 
-    <a href="/comments/page/<%= @page + 1 %>">Page
-      <%= @page + 1 %> &gt;&gt;</a>
+    <a href="/comments/page/<%= @page + 1 %>">صفحه
+      <%= (to_farsi_number(@page + 1).to_s) %> &gt;&gt;</a>
   <% end %>
 </div>
