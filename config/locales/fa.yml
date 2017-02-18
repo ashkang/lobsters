@@ -59,6 +59,7 @@ fa:
       update: "ویرایش"
       preview: "پیش نمایش"
       cancel: "لغو"
+      markdownformattingavailable: "نمایش فرمت مارک داون"
     comment:
       reply: "جواب"
       link: "لینک"
