@@ -59,6 +59,11 @@ fa:
       update: "ویرایش"
       preview: "پیش نمایش"
       cancel: "لغو"
+    comment:
+      reply: "جواب"
+      link: "لینک"
+      edit: "اصلاح"
+      delete: "پاک کردن"
   stories:
     form:
       thisstorywasalreadysubmited: "این مطلب قبلا فرستاده شده است"
@@ -75,9 +80,3 @@ fa:
       nocomments: "فاقد نظر"
       cached: "کش"
       comments: "%{count} نظر"
-  comments:
-    comment:
-      reply: "جواب"
-      link: "لینک"
-      edit: "اصلاح"
-      delete: "پاک کردن"

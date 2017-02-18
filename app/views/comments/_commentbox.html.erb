@@ -32,7 +32,7 @@ data-shortid="<%= comment.short_id if comment.persisted? %>">
         </div>
       <% end %>
 
-      <%= button_tag "#{comment.new_record?? t('.post') : t('.update')}",
+      <%= button_tag comment.new_record?? t('.post') : t('.update') %>,
         :class => "comment-post", :type => "button",
         :disabled => !@user %>
       &nbsp;
