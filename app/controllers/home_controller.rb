@@ -79,7 +79,7 @@ class HomeController < ApplicationController
       paginate stories.newest
     }
 
-    @heading = @title = "Newest Stories"
+    @heading = @title = "مطالب اخیر"
     @cur_url = "/newest"
 
     @rss_link = { :title => "RSS 2.0 - Newest Items",
@@ -105,7 +105,7 @@ class HomeController < ApplicationController
       paginate stories.newest_by_user(by_user)
     }
 
-    @heading = @title = "Newest Stories by #{by_user.username}"
+    @heading = @title = "جدیدترین مطالب ارسال شده توسط #{by_user.username}"
     @cur_url = "/newest/#{by_user.username}"
 
     @newest = true
@@ -130,7 +130,7 @@ class HomeController < ApplicationController
       paginate scope
     }
 
-    @heading = @title = "Recent Stories"
+    @heading = @title = "مطالب اخیر"
     @cur_url = "/recent"
 
     # our content changes every page load, so point at /newest.rss to be stable
@@ -191,7 +191,7 @@ class HomeController < ApplicationController
       paginate @user.upvoted_stories.order('votes.id DESC')
     }
 
-    @heading = @title = "Your Upvoted Stories"
+    @heading = @title = "مطالبی که شما به آنها رای دادید"
     @cur_url = "/upvoted"
 
     @rss_link = { :title => "RSS 2.0 - Your Upvoted Stories",
