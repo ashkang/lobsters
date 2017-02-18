@@ -60,6 +60,7 @@ fa:
       preview: "پیش نمایش"
       submit: "ارسال"
     listdetail:
+      nocomments: "فاقد نظر"
       cached: "کش"
       comments: "%{comments} نظر"
   comments:

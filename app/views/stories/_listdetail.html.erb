@@ -176,6 +176,7 @@ class="story <%= story.vote && story.vote[:vote] == 1 ? "upvoted" : "" %>
               <%= t('.nocomments') %>
             <% else %>
               <%= t('.comments', :count => story.comments_count) %>
+            <% end %>
             </a>
           </span>
         <% end %>
