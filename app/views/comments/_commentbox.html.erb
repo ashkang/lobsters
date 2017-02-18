@@ -24,7 +24,7 @@ data-shortid="<%= comment.short_id if comment.persisted? %>">
     <div class="markdown_help_toggler">
       <% if @user %>
         <div class="markdown_help_label">
-          Markdown formatting available
+          <%= t('.markdownformattingavailable') %>
         </div>
         <div class="markdown_help_label markdown_help_label_mobile"
         style="display: none;">

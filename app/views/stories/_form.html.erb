@@ -1,6 +1,6 @@
 <% if f.object.errors.count == 1 && f.object.already_posted_story %>
   <div class="flash-error">
-  <h2><%= t('.thisstorywasalreadysubmited') <%=
+  <h2><%= t('.thisstorywasalreadysubmited') %>=
     time_ago_in_words_label(f.object.already_posted_story.created_at) %></h2>
   <p>
   Please view the <a href="<%= f.object.already_posted_story.comments_path %>"
