@@ -118,7 +118,7 @@
   <br>
 
   <% if @showing_user.is_active? %>
-    <label class="required">About:</label>
+    <label class="required"><%= t('.about') %></label>
 
     <div class="d shorten_first_p">
       <% if @showing_user.about.present? %>
