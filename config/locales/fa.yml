@@ -72,4 +72,12 @@ fa:
     show:
       cached: "نسخه آرشیوی"
     listdetail:
+      nocomments: "فاقد نظر"
       cached: "کش"
+      comments: "%{count} نظر"
+  comments:
+    comment:
+      reply: "جواب"
+      link: "لینک"
+      edit: "اصلاح"
+      delete: "پاک کردن"

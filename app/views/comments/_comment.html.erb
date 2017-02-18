@@ -65,11 +65,11 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
 
       <% if !comment.previewing %>
         |
-        <a href="<%= comment.short_id_url %>">link</a>
+        <a href="<%= comment.short_id_url %>"><%= t('.link') %></a>
 
         <% if comment.is_editable_by_user?(@user) %>
           |
-          <a class="comment_editor">edit</a>
+          <a class="comment_editor"><%= t('.edit') %></a>
         <% end %>
 
         <% if comment.is_gone? && comment.is_undeletable_by_user?(@user) %>
@@ -78,9 +78,9 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
         <% elsif !comment.is_gone? && comment.is_deletable_by_user?(@user) %>
           |
           <% if @user && @user.is_moderator? && @user.id != comment.user_id %>
-            <a class="comment_moderator">delete</a>
+            <a class="comment_moderator"><%= t('.delete') %></a>
           <% else %>
-            <a class="comment_deletor">delete</a>
+            <a class="comment_deletor"><%= t('.delete') %></a>
           <% end %>
         <% end %>
 
@@ -95,7 +95,7 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
 
         <% if @user && !comment.story.is_gone? && !comment.is_gone? %>
             |
-            <a class="comment_replier" unselectable="on">reply</a>
+            <a class="comment_replier" unselectable="on"><%= t('.reply') %></a>
         <% end %>
 
         <% if defined?(show_story) && show_story %>
