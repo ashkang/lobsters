@@ -69,3 +69,12 @@ fa:
       link: "لینک"
       edit: "اصلاح"
       delete: "پاک کردن"
+  helpers:
+    applicationhelper:
+      now: "همین الان"
+      minute: "یک دقیقه پیش"
+      mins: "%{mins} دقیقه پیش"
+      hours: "%{hours} ساعت پیش"
+      days: "%{days} روز پیش"
+      months: "%{months} ماه پیش"
+      years: "%{years} سال پیش"
