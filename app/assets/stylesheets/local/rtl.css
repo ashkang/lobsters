@@ -49,3 +49,7 @@ div.markdown_help_label {
   position: absolute;
   right: 75%;
 }
+
+.legend.right {
+  float: left !important!
+}
