@@ -110,8 +110,8 @@ var _Lobsters = Class.extend({
       d.css("left", $(voterEl).position().left);
   },
 
-  toLatin: function(str) {
-    str = str.replace(/0/g, '۰');
+  toLatin: function(string) {
+    var str = string.replace(/0/g, '۰');
     str = str.replace(/1/g, '۱');
     str = str.replace(/2/g, '۲');
     str = str.replace(/3/g, '۳');
@@ -125,8 +125,8 @@ var _Lobsters = Class.extend({
     return parseInt(str)
   },
 
-  toFarsi: function(num) {
-    num = num.replace(/۰/g, '0');
+  toFarsi: function(number) {
+    var num = number.toString().replace(/۰/g, '0');
     num = num.replace(/۱/g, '1');
     num = num.replace(/۲/g, '2');
     num = num.replace(/۳/g, '3');
