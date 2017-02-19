@@ -8,10 +8,10 @@ TextDirection.Align = {}
 TextDirection.Align[TextDirection.RTL] = 'right'
 TextDirection.Align[TextDirection.LTR] = 'left'
 
-TextDirection.detect = function(text) {
-  var rtlChar = /[\u0590-\u083F]|[\u08A0-\u08FF]|[\uFB1D-\uFDFF]|[\uFE70-\uFEFF]/mg
+TextDirection.rtlCharacters = /[\u0590-\u083F]|[\u08A0-\u08FF]|[\uFB1D-\uFDFF]|[\uFE70-\uFEFF]/mg
 
-  if (text.match(text))
+TextDirection.detect = function(text) {
+  if (text.match(TextDirection.rtlCharacters))
     return TextDirection.RTL
 
   return TextDirection.LTR
