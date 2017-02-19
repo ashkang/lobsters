@@ -22,8 +22,7 @@ class SearchController < ApplicationController
         begin
           @search.search_for_user!(@user)
         rescue ThinkingSphinx::ConnectionError
-          flash[:error] = "Sorry, but the search engine is currently out " <<
-            "of order"
+          flash[:error] = I18n.t('controllers.search_controller.outoforder')
         end
       end
     end
