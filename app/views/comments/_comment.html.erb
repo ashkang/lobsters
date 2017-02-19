@@ -56,9 +56,7 @@ class="comment <%= comment.current_vote ? (comment.current_vote[:vote] == 1 ?
         just now
       <% else %>
         <% if comment.has_been_edited? %>
-          edited
-        <% elsif comment.is_from_email? %>
-          e-mailed
+          <%= t('.edited') %>
         <% end %>
         <%= time_ago_in_words_label((comment.has_been_edited? ?
           comment.updated_at : comment.created_at), :strip_about => true) %>
