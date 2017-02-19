@@ -468,7 +468,7 @@ fa:
       strongdescription: "متن خودتون رو بین **دو تا علامت ستاره** بذارید"
       fixedwidth: "متن با فونت پهنای ثابت"
       fixedwidthdescription: "متن خودتون رو بین ‍`علامت بک تیک` بذارید"
-      linkedlabel: "متن لینک شده"
+      linked: "متن لینک شده"
       linkeddescription: "یا فقط یک لینک ساده بدون برچسب"
       quoted: "متن نقل قول شده"
       quoteddescription: "متن خودتون رو با علامت < شروع کنید"
