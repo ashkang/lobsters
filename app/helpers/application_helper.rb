@@ -64,7 +64,7 @@ module ApplicationHelper
     ago = ""
     secs = (Time.now - time).to_i
     if secs <= 5
-      ago =  I18n.t('helpers.time.now')
+      ago = I18n.t('helpers.time.now')
     elsif secs < 60
       ago = I18n.t('helpers.time.minute')
     elsif secs < (60 * 60)

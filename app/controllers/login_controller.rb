@@ -86,7 +86,7 @@ class LoginController < ApplicationController
 
     @found_user.initiate_password_reset_for_ip(request.remote_ip)
 
-    flash.now[:success] = I18n.t('controllers.login_controllers.resetpassword')
+    flash.now[:success] = I18n.t('controllers.login_controller.resetpassword')
     return index
   end
 
@@ -115,11 +115,11 @@ class LoginController < ApplicationController
           session[:u] = @reset_user.session_token
           return redirect_to "/"
         else
-          flash[:error] = I18n.t('controllers.login_controllers.resetpasswordfailed')
+          flash[:error] = I18n.t('controllers.login_controller.resetpasswordfailed')
         end
       end
     else
-      flash[:error] = I18n.t('controllers.login_controllers.invalidtoken')
+      flash[:error] = I18n.t('controllers.login_controller.invalidtoken')
       return redirect_to forgot_password_path
     end
   end
