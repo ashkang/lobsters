@@ -148,6 +148,10 @@ fa:
       header:
         one: "1 خطا جلوی ذخیره این %{model} را گرفت"
         other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
+  controllers:
+    login_controller:
+      invalidemailpassword: "شناسه کاربری یا رمز عبور شما اشتباه است"
+      invaliduseremail: "شناسه کاربری یا آدرس ایمیل شما اشتباه است"
   helpers:
     select:
       prompt: "لطفا انتخاب کنید"

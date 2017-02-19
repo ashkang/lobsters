@@ -66,7 +66,7 @@ class LoginController < ApplicationController
     rescue
     end
 
-    flash.now[:error] = "Invalid e-mail address and/or password."
+    flash.now[:error] = I18n.t('controllers.login_controller.invalidemailpassword')
     @referer = params[:referer]
     index
   end
@@ -81,7 +81,7 @@ class LoginController < ApplicationController
       params[:email].to_s).first
 
     if !@found_user
-      flash.now[:error] = "Invalid e-mail address or username."
+      flash.now[:error] = I18n.t('controllers.login_controller.invaliduseremail')
       return forgot_password
     end
 
