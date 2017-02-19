@@ -5,8 +5,8 @@ TextDirection.LTR = 'ltr'
 
 TextDirection.Align = {}
 
-TextDirection[TextDirection.RTL] = 'right'
-TextDirection[TextDirection.LTR] = 'left'
+TextDirection.Align[TextDirection.RTL] = 'right'
+TextDirection.Align[TextDirection.LTR] = 'left'
 
 TextDirection.detect = function(text) {
   var rtlChar = /[\u0590-\u083F]|[\u08A0-\u08FF]|[\uFB1D-\uFDFF]|[\uFE70-\uFEFF]/mg
