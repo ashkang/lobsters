@@ -37,8 +37,7 @@ class LoginController < ApplicationController
 
       if !user.is_active?
         user.undelete!
-        flash[:success] = "Your account has been reactivated and your " <<
-          "unmoderated comments have been undeleted."
+        flash[:success] = I18n.t('controllers.login_controller.reactivated')
       end
 
       session[:u] = user.session_token
@@ -87,8 +86,7 @@ class LoginController < ApplicationController
 
     @found_user.initiate_password_reset_for_ip(request.remote_ip)
 
-    flash.now[:success] = "Password reset instructions have been e-mailed " <<
-      "to you."
+    flash.now[:success] = I18n.t('controllers.login_controllers.resetpassword')
     return index
   end
 
@@ -117,12 +115,11 @@ class LoginController < ApplicationController
           session[:u] = @reset_user.session_token
           return redirect_to "/"
         else
-          flash[:error] = "Could not reset password."
+          flash[:error] = I18n.t('controllers.login_controllers.resetpasswordfailed')
         end
       end
     else
-      flash[:error] = "Invalid reset token.  It may have already been " <<
-        "used or you may have copied it incorrectly."
+      flash[:error] = I18n.t('controllers.login_controllers.invalidtoken')
       return redirect_to forgot_password_path
     end
   end
