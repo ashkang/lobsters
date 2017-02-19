@@ -460,3 +460,17 @@ fa:
       about: "در مورد شما:"
       markdownformattingavailable: "نمایش فرمت مارک داون"
       signup: "ثبت نام"
+  global:
+    markdownhelp:
+      emphasized: *متن مهم*
+      emphasizeddescription: ``متن خودتون رو توی *ستاره* بذارید``
+      strong: **متن بولد**
+      strongdescription: ``متن خودتون رو بین **دو تا علامت ستاره** بذارید``
+      fixedwidth: `متن با فونت پهنای ثابت`
+      fixedwidthdescription: ``متن خودتون رو بین ‍`علامت بک تیک` بذارید``
+      linked: [متن لینک شده](http://sohb.at)
+      linkeddescription: ``[لیبل لینک](آدرس لینک) یا یک لینک ساده``
+      quoted: > متن نقل قول شده
+      quoteddescription: ``متن خودتون را با علامت > شروع کنید``
+      prefix: "برو    بعدی"
+      prefixdescription: ‍‍``قبل از شروع کلمه بعدی از حداقل    فاصله استفاده کنید‍``
