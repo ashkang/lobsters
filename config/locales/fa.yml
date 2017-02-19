@@ -276,7 +276,7 @@ fa:
       edit: "اصلاح"
       delete: "پاک کردن"
       on: "روی مطلب"
-      edited: دستکاری شده
+      edited: دست کاری شده
   stories:
     errors:
       post:
