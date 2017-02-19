@@ -22,5 +22,5 @@ TextDirection.direct = function(el) {
   el.style.direction = direction
   el.style.textAlign = TextDirection.Align[direction]
 
-  el.addClass(direction)
+  el.classList.add(direction)
 }
