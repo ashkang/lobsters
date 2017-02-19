@@ -471,7 +471,7 @@ fa:
       linkedlabel: "متن لینک شده"
       linkeddescription: "یا فقط یک لینک ساده بدون برچسب"
       quoted: "متن نقل قول شده"
-      quoteddescription: "متن خودتون رو با علامت > شروع کنین"
+      quoteddescription: "متن خودتون رو با علامت < شروع کنید"
       pre: برو
       text: بعدی
-      prefixdescription: "‍‍``قبل از شروع کلمه بعدی از حداقل    فاصله استفاده کنید‍``"
+      prefixdescription: "‍‍قبل از شروع کلمه     بعدی از حداقل ۴ تا فاصله استفاده کنین"
