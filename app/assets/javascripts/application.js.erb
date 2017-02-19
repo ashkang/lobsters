@@ -547,4 +547,8 @@ $(document).ready(function() {
       $("button.comment-post").click();
     }
   });
+
+  $('.comment_text p').each(function(i,p) {
+      TextDirection.direct(p);
+  });
 });
