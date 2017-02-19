@@ -1,11 +1,11 @@
 <div class="markdown_help" style="display: none; padding-top: 0.5em;">
   <table>
   <tr>
-    <td width="125"><%= t('.emphasized') %></td>
+    <td width="125"><em><%= t('.emphasized') %></em></td>
     <td><%= t('.emphasizeddescription') %></td>
   </tr>
   <tr>
-    <td><%= t('.strong') %></td>
+    <td><strong><%= t('.strong') %></strong></td>
     <td><%= t('.strongdescription') %></td>
   </tr>
   <!--
@@ -15,19 +15,21 @@
   </tr>
   -->
   <tr>
-    <td><%= t('.fixedwidth') %></td>
-    <td><%= t('.fixedwidthdescription') %></td>
+    <td><tt><%= t('.fixedwidth') %></tt></td>
+    <td><%= t('.fixedwidthdescription') %></tt></td>
   </tr>
   <tr>
-    <td><%= t('.linked') %></td>
-    <td><%= t('.linkeddescription') %></td>
+    <td><a href="http://example.com/"
+      style="color: inherit;">linked text</a></td>
+    <td><tt>[<%= t('.linkedlabel') %>](http://example.com/)</tt> <%= t('.linkeddescription') %></td>
   </tr>
   <tr>
-    <td><%= t('.quoted') %></td>
+    <td><blockquote><%= t('.quoted') %></blockquote></td>
     <td><%= t('.quoteddescription') %></td>
   </tr>
   <tr>
-    <td><%= t('.prefix') %></td>
+    <td><pre style="margin: 0px;"><%= t('.pre') %>
+    <%= t('.text') %></pre></td>
     <td><%= t('.prefixdescription') %></td>
   </tr>
   <% if defined?(allow_images) && allow_images %>
