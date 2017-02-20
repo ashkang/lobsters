@@ -11,17 +11,17 @@ class SettingsController < ApplicationController
     if @user.try(:authenticate, params[:user][:password].to_s)
       @user.delete!
       reset_session
-      flash[:success] = "Your account has been deleted."
+      flash[:success] = I18n.t('controllers.settings_controller.accountdeleted')
       return redirect_to "/"
     end
 
-    flash[:error] = "Your password could not be verified."
+    flash[:error] = I18n.t('controllers.settings_controller.passwordnotverified')
     return redirect_to settings_path
   end
 
   def pushover
     if !Pushover.SUBSCRIPTION_CODE
-      flash[:error] = "This site is not configured for Pushover"
+      flash[:error] = I18n.t('controllers.settings_controller.pushoverdisabled')
       return redirect_to "/settings"
     end
 
@@ -36,12 +36,12 @@ class SettingsController < ApplicationController
 
   def pushover_callback
     if !session[:pushover_rand].to_s.present?
-      flash[:error] = "No random token present in session"
+      flash[:error] = I18n.t('controllers.settings_controller.norandomtokensession')
       return redirect_to "/settings"
     end
 
     if !params[:rand].to_s.present?
-      flash[:error] = "No random token present in URL"
+      flash[:error] = I18n.t('controllers.settings_controller.norandomtokenurl')
       return redirect_to "/settings"
     end
 
@@ -54,10 +54,9 @@ class SettingsController < ApplicationController
     @user.save!
 
     if @user.pushover_user_key.present?
-      flash[:success] = "Your account is now setup for Pushover notifications."
+      flash[:success] = I18n.t('controllers.settings_controller.pushoverconfigured')
     else
-      flash[:success] = "Your account is no longer setup for Pushover " <<
-        "notifications."
+      flash[:success] = I18n.t('controllers.settings_controller.pushoverdeconfigured')
     end
 
     return redirect_to "/settings"
@@ -67,7 +66,7 @@ class SettingsController < ApplicationController
     @edit_user = @user.clone
 
     if @edit_user.update_attributes(user_params)
-      flash.now[:success] = "Successfully updated settings."
+      flash.now[:success] = I18n.t('controllers.settings_controller.updated')
       @user = @edit_user
     end
 
