@@ -1,5 +1,5 @@
-<%= @comment.user.username %> mentioned you in a comment:
+<%= @comment.user.username %> شما رو در یک کامنت منشن کرده:
 
   <%= word_wrap(@comment.plaintext_comment, :line_width => 72).gsub(/\n/, "\n  ") %>
 
-Continue this discussion at <%= @comment.url %>
+با کلیک کردن روی لینک روبرو میتونید به بحث ادامه بدین: <%= @comment.url %>

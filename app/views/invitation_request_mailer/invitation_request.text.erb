@@ -1,15 +1,14 @@
-Hello <%= @invitation_request.email %>,
+سلام <%= @invitation_request.email %>,
 
-Someone at <%= @invitation_request.ip_address %> has submitted an invitation request to
-<%= Rails.application.name %>.
+یک نفر در آدرس <%= @invitation_request.ip_address %> تقاضای یک دعوتنامه عمومی برای عضو شدن در
+<%= Rails.application.name %> داده.
 
-  Name: <%= @invitation_request.name %>
-  E-mail: <%= @invitation_request.email %> (won't be displayed to other users)
-  Memo: <%= @invitation_request.memo %>
+  نام: <%= @invitation_request.name %>
+  آدرس ایمیل: <%= @invitation_request.email %> (won't be displayed to other users)
+  پیغام: <%= @invitation_request.memo %>
 
-If this is you, visit the URL below to confirm your request and
-display it to other logged-in users.
+اگر این واقعا خودتون هستید به آدرس ایمیلتون مراجعه کنید و تقاضا رو تایید کنید تا اون رو به سایر کاربران نشون بدیم.
 
   <%= Rails.application.root_url %>invitations/confirm/<%= @invitation_request.code %>
 
-If this is not you, you can delete this message.
+اگر این تقاضا رو خودتون ارائه ندادید، این ایمیل رو نادیده بگیرید یا پاکش کنید.
