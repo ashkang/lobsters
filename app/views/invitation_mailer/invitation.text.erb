@@ -1,4 +1,4 @@
-<%= سلام @invitation.email %>,
+سلام <%= @invitation.email %>,
 
 کاربر <%= @invitation.user.username %> شما رو به سرویس <%= Rails.application.name %> دعوت کرده. (<%= Rails.application.root_url %>)<%= @invitation.memo.present? ? raw("\n\n   #{@invitation.memo}") : "" %>
 
