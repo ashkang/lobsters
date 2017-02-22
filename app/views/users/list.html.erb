@@ -1,6 +1,6 @@
 <div class="box wide">
   <p>
-  <strong><%= @title %> (<%= @user_count %>)</strong>
+  <strong><%= t('.title') %> (<%= @user_count %>)</strong>
   </p>
 
   <ul class="user_tree">
@@ -14,11 +14,11 @@
         <% end %>
         ><%= user.username %></a>
       <% if user.is_admin? %>
-        (administrator)
+        <%= t('.administrator') %>
       <% else %>
         (<%= user.karma %>)
         <% if user.is_moderator? %>
-          (moderator)
+          <%= t('.moderator') %>
         <% end %>
       <% end %>
     </li>

@@ -149,6 +149,11 @@ fa:
         one: "1 خطا جلوی ذخیره این %{model} را گرفت"
         other: "%{count} خطا جلوی ذخیره این %{model} را گرفت"
   controllers:
+    messages_controller:
+      sent: پیغام شما به %{to} ارسال شد
+      deleted: پاک شد
+      deletedbulk: تعداد %{count} پیغام پاک شد
+      notfound: پیغام پیدا نشد
     login_controller:
       invalidemailpassword: "شناسه کاربری یا رمز عبور شما اشتباه است"
       invaliduseremail: "شناسه کاربری یا آدرس ایمیل شما اشتباه است"
@@ -303,7 +308,6 @@ fa:
       link: "لینک"
       edit: "اصلاح"
       delete: "پاک کردن"
-      on: "روی مطلب"
       edited: دست کاری شده
   stories:
     errors:
@@ -433,6 +437,18 @@ fa:
       showinyourthreads: "روی مطالب مورد بحث شما"
       pushover: "سرویس پوش-اوور"
   users:
+    tree:
+      title: درخت کاربران
+      newestusers: جدیدترین کاربران
+      administrator: مدیر
+      moderator: ناظر
+      newuser: کاربر جدید
+    list:
+      title: کاربران
+      newestusers: جدیدترین کاربران
+      administrator: مدیر
+      moderator: ناظر
+      newuser: کاربر جدید
     invitationform:
       invitationp1: "تعداد دعوت‌نامه‌هایی که میتونی بفرستی نامحدود هستن ولی سعی کن آدمهایی رو به اینجا دعوت کنی که بتونن برای فضای اینجا مفید باشن. توی دعوتنامه فرستادن به آدمهایی که نمیشناسیشون دقت بیشتری داشته باش."
       emailaddress: "آدرس ایمیل:"
@@ -469,19 +485,31 @@ fa:
       disableinvitations: "غیرفعال کردن امکان فرستادن دعوتنامه"
       about: "درباره این کاربر:"
   messages:
+    show:
+      backtomessages: بازگشت به پیغام‌ها
+      backtosentmessages: بازگشت به پیغام‌های فرستاده شده
+      administrator: (مدیر)
+      moderator: (ناظر)
+      deletemessage: پاک کردن پیغام
+      keepasnew: نخوانده نگه دار
+      composereply: نوشتن جواب
+      from: از
+      to: به
+      send: بفرست
+      noreply: نمیتونی به این پیغام جواب بدی. لطفا با یک ناظر تماس بگیر
     index:
-      privatemessages: "پیغام‌های خصوصی"
-      viewreceived: "پیام‌های دریافت شده"
-      viewsent: "پیام‌های ارسال شده"
-      from: "از"
-      to: "به"
-      received: "دریافتی"
-      sent: "ارسالی"
-      deleteselected: "انتخاب شده‌ها رو پاک کن"
+      privatemessages: پیغام‌های خصوصی
+      viewreceived: پیام‌های دریافت شده
+      viewsent: پیام‌های ارسال شده
+      from: از
+      to: به
+      received: زمان دریافت
+      sent: زمان ارسال
+      deleteselected: انتخاب شده‌ها رو پاک کن
       compose: فرستادن پیغام جدید
-      subject: "موضوع"
-      message: "متن پیام"
-      send: "بفرست"
+      subject: موضوع
+      message: متن پیام
+      send: بفرست
       nosentmessages: "شما هیچ پیغام خصوصی ارسال شده‌ای ندارید"
       nomessages: "شما هیچ پیغام خصوصی ندارید"
   signup:

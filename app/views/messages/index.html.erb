@@ -18,7 +18,7 @@
   <div class="legend">
     <%= t('.privatemessages') %>
     <% if @direction == :out %>
-      Sent
+      <%= t('.sent') %>
     <% end %>
   </div>
 
@@ -30,7 +30,7 @@
           :id => "delete_all" %></th>
         <th width="15%"><%= @direction == :in ? t('.from') : t('.to') %></th>
         <th width="17%"><%= @direction == :in ? t('.received') : t('.sent') %></th>
-        <th width="60%">Subject</th>
+        <th width="60%"><%= t('.subject') %></th>
       </tr>
       <% @messages.includes(:author, :recipient).each do |message| %>
         <tr class="<%= message.has_been_read? ? "" : "bold" %>">
@@ -47,8 +47,7 @@
                 message.recipient.username %></a>
             <% end %></td>
           <td><%= time_ago_in_words_label(message.created_at) %></td>
-          <td><a href="/messages/<%= message.short_id %>"><%= message.subject
-            %></a></td>
+          <td><a href="/messages/<%= message.short_id %>"><%= message.subject%></a></td>
         </tr>
       <% end %>
       </table>
