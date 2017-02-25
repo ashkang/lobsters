@@ -248,6 +248,15 @@ fa:
       short: "%e %B، ساعت %H:%M"
     pm: بعد از ظهر
   models:
+    vote:
+      offtopic: بی‌ربط
+      incorrect: اشتباه
+      metoo: منم همینطور
+      troll: فرستاده شده توسط نخاله‌های اینترنتی
+      spam: اسپم
+      cancel: لغو
+      alreadyposted: قبلا فرستاده شده
+      lowquality: کیفیت پایین
     moderation:
       storyeditedby: "مطلب شما ادیت شده توسط "
       usersuggestions: "پیشنهادات کاربران"
@@ -333,6 +342,11 @@ fa:
       submit: "ارسال"
     show:
       cached: "نسخه آرشیوی"
+    suggest:
+      suggeststorychanges: پیشنهاد اعمال تغییرات در مطلب
+      suggestchanges: ثبت پیشنهادات
+      or: یا
+      cancel: لغو
     listdetail:
       nocomments: "فاقد نظر"
       cached: "کش"
@@ -346,8 +360,10 @@ fa:
       undeleteconfirm: "مطمئنی که میخوای این مطلب رو بازیابی کنی؟"
       delete: "پاک کردن"
       undelete: "بازیابی"
-      suggest: "توصیه"
-      edit: "ویرایش"
+      suggest: توصیه ویرایش
+      edit: ویرایش
+      flag: نشان‌گذاری
+      unflag: برداشتن نشانه
   helpers:
     time:
       now: "همین الان"
