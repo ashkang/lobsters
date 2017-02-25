@@ -514,7 +514,8 @@ fa:
       send: بفرست
       noreply: نمیتونی به این پیغام جواب بدی. لطفا با یک ناظر تماس بگیر
     index:
-      privatemessages: پیغام‌های خصوصی
+      privatemessages: پیام‌های خصوصی
+      privatemessagessent: پیام‌های خصوصی ارسال شده
       viewreceived: پیام‌های دریافت شده
       viewsent: پیام‌های ارسال شده
       from: از
