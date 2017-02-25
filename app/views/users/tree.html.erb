@@ -1,13 +1,13 @@
 <div class="box wide">
   <p>
-  <strong><%= t('.title') %> (<%= @user_count %>)</strong>
+  <strong><%= t('.title') %> (<%= to_farsi_number(@user_count.to_s) %>)</strong>
   </p>
 
   <p>
     <%= t('.newestusers') %>
   <%= raw @newest.map{|u| "<a href=\"/u/#{u.username}\" class=\"" <<
     (u.is_new?? t('.newuser') : "") << "\">#{u.username}</a> " <<
-    "(#{u.karma})" }.join(", ") %>
+    "(#{to_farsi_number(u.karma.to_s)})" }.join(", ") %>
   </p>
 
   <ul class="tree user_tree">
@@ -28,7 +28,7 @@
           <% if user.is_admin? %>
             <%= t('.administrator') %>
           <% else %>
-            (<%= user.karma %>)
+            (<%= to_farsi_number(user.karma.to_s) %>)
             <% if user.is_moderator? %>
               <%= t('.moderator') %>
             <% end %>

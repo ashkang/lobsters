@@ -1,6 +1,6 @@
 <div class="box wide">
   <p>
-  <strong><%= t('.title') %> (<%= @user_count %>)</strong>
+  <strong><%= t('.title') %> (<%= to_farsi_number(@user_count.to_s) %>)</strong>
   </p>
 
   <ul class="user_tree">
@@ -16,7 +16,7 @@
       <% if user.is_admin? %>
         <%= t('.administrator') %>
       <% else %>
-        (<%= user.karma %>)
+        (<%= to_farsi_number(user.karma.to_s) %>)
         <% if user.is_moderator? %>
           <%= t('.moderator') %>
         <% end %>
